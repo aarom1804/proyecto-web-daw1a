@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <!-- Metadatos -->
+  <meta charset="utf-8">
+  <meta name="author" content="Jeynner Gonzalez">
+  <meta name="description" content="Controla tus desperdicios de comida">
+  <meta name="keywords" content="Control, Medio Ambiente, Menos desperdicio, Residuos">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Titulo -->
+  <title>Effinity</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="img/logo-icono.ico">
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Iconos de Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <!-- CSS -->
+  <link href="style.css" rel="stylesheet">
+  <!-- Google Fonts Unbounded-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+  <!-- Schema -->
+   <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Effinity",
+  "url": "https://effinity.com", 
+  "logo": "https://effinity.com/img/logo-sin-texto.png",
+  "description": "Empresa dedicada a optimizar la gestión de desperdicios alimentarios mediante análisis de datos, estrategias sostenibles y recomendaciones inteligentes.",
+  
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "C/Tarragona 321",
+    "addressLocality": "Tarragona",
+    "addressCountry": "ES"
+  },
+
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "customer support",
+    "email": "contacto-effinity@effinity.com"
+  },
+
+  "sameAs": [
+    "https://twitter.com",
+    "https://www.instagram.com",
+    "https://www.facebook.com"
+  ],
+
+  "makesOffer": [
+    {
+      "@type": "Offer",
+      "name": "Análisis de Desperdicio",
+      "description": "Analizamos los desperdicios alimentarios para optimizar procesos y reducir costos.",
+      "image": "https://effinity.com/img/img/imagen-cocina.jpg"
+    },
+    {
+      "@type": "Offer",
+      "name": "Visualización de Pérdidas Ocultas",
+      "description": "Descubre pérdidas no detectadas mediante reportes inteligentes.",
+      "image": "https://effinity.com/img/img/imagen-ahorro.jpg"
+    },
+    {
+      "@type": "Offer",
+      "name": "Recomendaciones Inteligentes",
+      "description": "Soluciones sugeridas basadas en IA para mejorar la gestión del desperdicio.",
+      "image": "https://effinity.com/img/img/imagen-alimento-movil.png"
+    }
+  ],
+
+  "review": [
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Organization",
+        "name": "Fleca-Flaque"
+      },
+      "reviewBody": "Implementamos su sistema y hemos logrado optimizar el manejo de desperdicios en un 40%.",
+      "itemReviewed": "Effinity"
+    },
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Organization",
+        "name": "City-Wok"
+      },
+      "reviewBody": "Una empresa que realmente se preocupa por el reciclaje y la reducción de desperdicios. ¡Gran iniciativa!",
+      "itemReviewed": "Effinity"
+    },
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Organization",
+        "name": "K10"
+      },
+      "reviewBody": "Excelente atención y un equipo muy responsable. Ahora gestionamos nuestros desperdicios de forma más eficiente y sostenible.",
+      "itemReviewed": "Effinity"
+    }
+  ]
+}
+</script>
+
+</head>
+
+<body>
+
+  <!-- Barra de navegacion -->
+  <nav class="navbar navbar-expand-md navbar-light">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
+        aria-controls="navbar-toggler" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar-toggler">
+        <a class="navbar-brand ms-md-3" href="#">
+          <img src="img/logo-sin-texto.png" width="50" alt="Logo de la página web">
+        </a>
+        <ul class="navbar-nav d-flex justify-content-center align-items-center me-md-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#nosotros">Sobre Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#servicios">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#opiniones">Opiniones</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacto">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Home -->
+  <section id="home" class="home seccion-oscura">
+    <div class="contenedor">
+      <img src="img/img/imagen_desperdicio.png" alt="Desperdicio">
+      <h2 class="seccion-titulo">EFFINITY</h2>
+    </div>
+  </section>
+
+  <!-- Sobre Nosotros -->
+  <section id="nosotros" class="nosotros seccion-oscura">
+    <div class="container rectangulo d-flex text-center p-5 m-5 align-items-center">
+      <div class="column">
+        <div class="seccion-titulo texto-blanco p-3">
+          <h2>Sobre Nosotros</h2>
+        </div>
+        <div class="px-5 pb-4">
+          <blockquote class="blockquote">
+            <p>Somos una empresa dedicada a transformar la manera en que las organizaciones gestionan sus residuos
+              alimentarios. Combinamos análisis de datos avanzados con estrategias sostenibles para reducir el
+              desperdicio, mejorar la eficiencia y generar un impacto positivo en el medio ambiente. </p>
+          </blockquote>
+        </div>
+      </div>
+      <div class="imagen-nosotros">
+        <img src="img/img/control-cocina.webp" alt="Control de cocina">
+      </div>
+    </div>
+  </section>
+
+  <!-- Servicios -->
+  <section id="servicios" class="servicios-ofrecidos seccion-clara d-flex flex-column">
+    <h2 class="seccion-titulo texto-negro">Servicios</h2>
+    <h3 class="seccion-descripcion">Estos son los servicios que ofrecemos</h3>
+    <!-- Servicios Ofrecidos -->
+    <div class="container text-center servicios-contenedor">
+      <div class="row">
+        <!-- Servicio 1 -->
+        <div class="col-12 col-md-8 col-lg-8">
+          <div class="servicio">
+            <img src="img/img/imagen-cocina.jpg" alt="Servicio 1">
+            <div class="overlay">
+              <p>Analisis de Desperdicio</p>
+              <div class="iconos-contenedor">
+                <a href="https://www.freecodecamp.org/espanol/" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-clipboard2-data"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Servicio 2 -->
+        <div class="col-12 col-md-8 col-lg-8">
+          <div class="servicio">
+            <img src="img/img/imagen-ahorro.jpg" alt="Servicio 2">
+            <div class="overlay">
+              <p>Visualiza tus pérdidas ocultas</p>
+              <div class="iconos-contenedor">
+                <a href="https://www.freecodecamp.org/espanol/" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-graph-up-arrow"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Servicio 3 -->
+        <div class="col-12 col-md-8 col-lg-8">
+          <div class="servicio">
+            <img src="img/img/imagen-alimento-movil.png" alt="Servicio 3">
+            <div class="overlay">
+              <p>Recomendaciones Inteligentes</p>
+              <div class="iconos-contenedor">
+                <a href="https://www.freecodecamp.org/espanol/" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-lightbulb"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Opiniones -->
+  <section id="opiniones" class="opiniones seccion-clara">
+    <h2 class="seccion-titulo">Opiniones</h2>
+    <h3 class="seccion-descripcion">Estas son algunas opiniones de nuestros clientes...</h3>
+    <!-- Carrusel -->
+    <div id="opiniones-carrusel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="container">
+            <img class="opinion-imagen rounded-circle" src="img/img-opiniones/FlecaFlaque.png"
+              alt="Foto Logo Fleca-Flaque">
+            <p class="opinion-texto">“Implementamos su sistema en nuestra empresa hace 3 meses y hemos logrado
+              optimizar el manejo de desperdicios en un 40%. La plataforma de reportes es muy práctica y el equipo
+              siempre está disponible para resolver dudas.”</p>
+            <div class="opinion-info">
+              <p class="cliente">Fleca-Flaque</p>
+              <p class="cargo">Administrador de Fleca-Flaque</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <img class="opinion-imagen rounded-circle" src="img/img-opiniones/CityWok.webp"
+              alt="Foto Logo City Wok">
+            <p class="opinion-texto">“Por fin una empresa que realmente se preocupa por el reciclaje y la reducción
+              de desperdicios. ¡Gran iniciativa!”</p>
+            <div class="opinion-info">
+              <p class="cliente">City-Wok</p>
+              <p class="cargo">Administrador de Restaurante City Wok</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <img class="opinion-imagen rounded-circle" src="img/img-opiniones/K10.png" alt="Foto Logo K10">
+            <p class="opinion-texto">“Excelente atención y un equipo muy responsable. Ahora gestionamos nuestros
+              desperdicios de forma más eficiente y sostenible.”</p>
+            <div class="opinion-info">
+              <p class="cliente">K10</p>
+              <p class="cargo">Administrador de Restaurante K10</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#opiniones-carrusel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#opiniones-carrusel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="contacto seccion-oscura">
+    <form action="datos.php" method="POST">
+      <div class="container text-center rectangulo d-flex align-items-center justify-content-center py-2 px-5 w-auto">
+        <div class="column">
+          <div class="seccion-titulo col-12 col-md-4 texto-blanco">
+            <h2>¡Hablemos!</h2>
+          </div>
+          <div class="row mb3">
+            <div class="col-md-6">
+              <label for="nombre" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+            </div>
+            <div class="col-md-6">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" name="email" placeholder="tu@email.com" required>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="mensaje" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje"
+              required></textarea>
+          </div>
+          <div class="politicas-envio d-flex align-items-center justify-content-between">
+          <div class="politicas form-check">
+            <input class="form-check-input" type="checkbox" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">Aceptas las <a href="politicas-privacidad.html" class="politicas">politicas de privacidad</a></label>
+          </div>
+          <div class="envio">
+            <button type="submit">
+              Contacto
+              <i class="bi bi-envelope-check-fill"></i>
+            </button>
+          </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </section>
+
+  <!-- Pie de pagina (footer) -->
+  <footer class="footer seccion-oscura d-flex flex-column align-items-center justify-content-center">
+    <img class="footer-logo" src="img/logo-sin-texto.png" alt="Logo Effinity">
+    <p class="footer-texto text-center">Gestionemos mejor nuestros desperdicios,<br>juntos podemos hacer un mundo mejor.
+    </p>
+    <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+      <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-twitter"></i>
+      </a>
+      <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-instagram"></i>
+      </a>
+      <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-facebook"></i>
+      </a>
+    </div>
+    <div class="ubicacion">
+      <div>
+        <p>Encuentranos en:</p>
+        <p>C/Tarragona 321</p>
+      </div>
+    </div>
+    <div class="derechos-de-autor">Creado por Jeynner Gonzalez</div>
+  </footer>
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
