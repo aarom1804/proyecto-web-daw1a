@@ -22,8 +22,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <!-- Schema -->
-   <script type="application/ld+json">
+  <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
@@ -149,76 +151,131 @@
   </section>
 
   <!-- Sobre Nosotros -->
+
   <section id="nosotros" class="nosotros seccion-oscura">
-    <div class="container rectangulo d-flex text-center p-5 m-5 align-items-center">
-      <div class="column">
-        <div class="seccion-titulo texto-blanco p-3">
-          <h2>Sobre Nosotros</h2>
+    <div class="container rectangulo p-5 m-5">
+
+      <div class="d-flex text-center align-items-center mb-4">
+        <div class="column flex-grow-1">
+          <div class="seccion-titulo texto-blanco p-3">
+            <h2>Sobre Nosotros</h2>
+          </div>
+          <div class="px-5 pb-4">
+            <blockquote class="blockquote">
+              <p>Somos una empresa dedicada a transformar la manera en que las organizaciones gestionan sus residuos
+                alimentarios. Combinamos análisis de datos avanzados con estrategias sostenibles para reducir el
+                desperdicio, mejorar la eficiencia y generar un impacto positivo en el medio ambiente. </p>
+            </blockquote>
+          </div>
         </div>
-        <div class="px-5 pb-4">
-          <blockquote class="blockquote">
-            <p>Somos una empresa dedicada a transformar la manera en que las organizaciones gestionan sus residuos
-              alimentarios. Combinamos análisis de datos avanzados con estrategias sostenibles para reducir el
-              desperdicio, mejorar la eficiencia y generar un impacto positivo en el medio ambiente. </p>
-          </blockquote>
+        <div class="imagen-nosotros">
+          <img src="img/img/control-cocina.webp" alt="Control de cocina" class="img-fluid">
         </div>
       </div>
-      <div class="imagen-nosotros">
-        <img src="img/img/control-cocina.webp" alt="Control de cocina">
+
+      <div class="row">
+        <div class="col-12">
+          <div class="ratio ratio-16x9"> <video controls class="rounded">
+              <source src="./video/Video_Effinity.mp4" type="video/mp4">
+              Tu navegador no soporta videos.
+            </video>
+          </div>
+        </div>
       </div>
+
     </div>
   </section>
 
   <!-- Servicios -->
   <section id="servicios" class="servicios-ofrecidos seccion-clara d-flex flex-column">
-    <h2 class="seccion-titulo texto-negro">Servicios</h2>
-    <h3 class="seccion-descripcion">Estos son los servicios que ofrecemos</h3>
-    <!-- Servicios Ofrecidos -->
-    <div class="container text-center servicios-contenedor">
+    <h2 class="seccion-titulo texto-negro text-center">Servicios</h2>
+    <h3 class="seccion-descripcion text-center">Estos son los servicios que ofrecemos</h3>
+
+    <div id="servicios-carrusel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+          <div class="container d-flex justify-content-center">
+            <div class="servicio" style="max-width: 1600px;"> <img src="img/img/imagen-cocina.webp" alt="Servicio 1"
+                class="d-block w-100">
+              <div class="overlay">
+                <p>Analisis de Desperdicio</p>
+                <div class="iconos-contenedor">
+                  <a href="https://www.freecodecamp.org/espanol/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-clipboard2-data"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="container d-flex justify-content-center">
+            <div class="servicio" style="max-width: 1600px;">
+              <img src="img/img/imagen-ahorro.webp" alt="Servicio 2" class="d-block w-100">
+              <div class="overlay">
+                <p>Visualiza tus pérdidas ocultas</p>
+                <div class="iconos-contenedor">
+                  <a href="https://www.freecodecamp.org/espanol/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-graph-up-arrow"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="container d-flex justify-content-center">
+            <div class="servicio" style="max-width: 1600px;">
+              <img src="img/img/imagen-alimento-movil.webp" alt="Servicio 3" class="d-block w-100">
+              <div class="overlay">
+                <p>Recomendaciones Inteligentes</p>
+                <div class="iconos-contenedor">
+                  <a href="https://www.freecodecamp.org/espanol/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-lightbulb"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#servicios-carrusel" data-bs-slide="prev">
+        <i class="bi bi-chevron-left icono-carrusel-personalizado" aria-hidden="true"></i>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#servicios-carrusel" data-bs-slide="next">
+        <i class="bi bi-chevron-right icono-carrusel-personalizado" aria-hidden="true"></i>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+  </section>
+
+
+  <!-- Mapa Ubicacion -->
+
+  <section id="mapa-seccion" class="seccion-oscura p-5">
+    <div class="container rectangulo p-4">
+
+      <div class="texto-blanco text-center mb-4">
+        <h2 class="seccion-titulo">Nuestra Ubicación</h2>
+      </div>
+
       <div class="row">
-        <!-- Servicio 1 -->
-        <div class="col-12 col-md-8 col-lg-8">
-          <div class="servicio">
-            <img src="img/img/imagen-cocina.jpg" alt="Servicio 1">
-            <div class="overlay">
-              <p>Analisis de Desperdicio</p>
-              <div class="iconos-contenedor">
-                <a href="https://www.freecodecamp.org/espanol/" target="_blank" rel="noopener noreferrer">
-                  <i class="bi bi-clipboard2-data"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Servicio 2 -->
-        <div class="col-12 col-md-8 col-lg-8">
-          <div class="servicio">
-            <img src="img/img/imagen-ahorro.jpg" alt="Servicio 2">
-            <div class="overlay">
-              <p>Visualiza tus pérdidas ocultas</p>
-              <div class="iconos-contenedor">
-                <a href="https://www.freecodecamp.org/espanol/" target="_blank" rel="noopener noreferrer">
-                  <i class="bi bi-graph-up-arrow"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Servicio 3 -->
-        <div class="col-12 col-md-8 col-lg-8">
-          <div class="servicio">
-            <img src="img/img/imagen-alimento-movil.png" alt="Servicio 3">
-            <div class="overlay">
-              <p>Recomendaciones Inteligentes</p>
-              <div class="iconos-contenedor">
-                <a href="https://www.freecodecamp.org/espanol/" target="_blank" rel="noopener noreferrer">
-                  <i class="bi bi-lightbulb"></i>
-                </a>
-              </div>
-            </div>
-          </div>
+        <div class="col-12">
+          <div id="mi_mapa" class="rounded" style="height: 400px; width: 100%; border: 2px solid #333;"></div>
         </div>
       </div>
+
+      <div class="text-center mt-3 texto-blanco">
+        <p>Visítanos en nuestras oficinas centrales.</p>
+      </div>
+
     </div>
   </section>
 
@@ -244,8 +301,7 @@
         </div>
         <div class="carousel-item">
           <div class="container">
-            <img class="opinion-imagen rounded-circle" src="img/img-opiniones/CityWok.webp"
-              alt="Foto Logo City Wok">
+            <img class="opinion-imagen rounded-circle" src="img/img-opiniones/CityWok.webp" alt="Foto Logo City Wok">
             <p class="opinion-texto">“Por fin una empresa que realmente se preocupa por el reciclaje y la reducción
               de desperdicios. ¡Gran iniciativa!”</p>
             <div class="opinion-info">
@@ -267,11 +323,12 @@
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#opiniones-carrusel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <i class="bi bi-chevron-left icono-carrusel-personalizado" aria-hidden="true"></i>
         <span class="visually-hidden">Anterior</span>
       </button>
+
       <button class="carousel-control-next" type="button" data-bs-target="#opiniones-carrusel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <i class="bi bi-chevron-right icono-carrusel-personalizado" aria-hidden="true"></i>
         <span class="visually-hidden">Siguiente</span>
       </button>
     </div>
@@ -288,7 +345,8 @@
           <div class="row mb3">
             <div class="col-md-6">
               <label for="nombre" class="form-label">Nombre</label>
-              <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+              <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingresa tu nombre"
+                required>
             </div>
             <div class="col-md-6">
               <label for="email" class="form-label">Email</label>
@@ -301,16 +359,17 @@
               required></textarea>
           </div>
           <div class="politicas-envio d-flex align-items-center justify-content-between">
-          <div class="politicas form-check">
-            <input class="form-check-input" type="checkbox" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">Aceptas las <a href="politicas-privacidad.html" class="politicas">politicas de privacidad</a></label>
-          </div>
-          <div class="envio">
-            <button type="submit">
-              Contacto
-              <i class="bi bi-envelope-check-fill"></i>
-            </button>
-          </div>
+            <div class="politicas form-check">
+              <input class="form-check-input" type="checkbox" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">Aceptas las <a href="politicas-privacidad.html"
+                  class="politicas">politicas de privacidad</a></label>
+            </div>
+            <div class="envio">
+              <button type="submit">
+                Contacto
+                <i class="bi bi-envelope-check-fill"></i>
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -322,6 +381,13 @@
     <img class="footer-logo" src="img/logo-sin-texto.png" alt="Logo Effinity">
     <p class="footer-texto text-center">Gestionemos mejor nuestros desperdicios,<br>juntos podemos hacer un mundo mejor.
     </p>
+    <div class="podcast d-flex flex-column align-items-center justify-content-center">
+      <p class="footer-texto text-center">Conocenos un poco más &#127911;</p>
+      <audio controls>
+      <source src="./audio/Audio_podcast.mp3" type="audio/mpeg">
+      Tu navegador no soporta el elemento de audio.
+      </audio>
+    </div>
     <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
       <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
         <i class="bi bi-twitter"></i>
@@ -341,6 +407,20 @@
     </div>
     <div class="derechos-de-autor">Creado por Jeynner Gonzalez</div>
   </footer>
+  <script>
+
+    var map = L.map('mi_mapa').setView([41.1201, 1.2438], 13);
+
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '© OpenStreetMap'
+    }).addTo(map);
+
+
+    L.marker([41.1201, 1.2438]).addTo(map)
+      .bindPopup('¡Hola! Estamos aquí.')
+      .openPopup();
+  </script>
   <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 

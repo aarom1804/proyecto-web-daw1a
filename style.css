@@ -171,6 +171,24 @@ section {
   margin: 10px;
 }
 
+
+
+#opiniones-carrusel .carousel-item {
+    height: 450px;     /* Altura menor que servicios */
+}
+
+.icono-carrusel-personalizado {
+    color: #007bff; 
+    font-size: 3rem;
+    /* Evita que el icono se mueva con el texto */
+    /* transition: transform 0.2s ease;  */
+}
+
+
+
+
+
+
 /* Opiniones */
 
 .opiniones {
@@ -181,9 +199,9 @@ section {
   max-width: 800px;
 }
 
-.carousel-item {
+/* .carousel-item {
   height: 500px;
-}
+} */
 
 .carousel-item .container {
   width: 100%;
@@ -223,6 +241,11 @@ section {
 .opinion-info .cargo {
   font-size: 0.9rem;
   color: #584e4e;
+}
+
+.opiniones .icono-carrusel-personalizado {
+  color: #007bff; 
+  font-size: 3rem;
 }
 
 /* Contacto */
@@ -347,6 +370,18 @@ footer {
 
 .ubicacion{
   margin-top: 1em;
+}
+
+.podcast{
+  margin: 10px;
+  padding: 20px;
+  
+  border-radius: 10px;
+  box-shadow: 0px 1px 4px 1px white;
+}
+
+.podcast p {
+  font-family: 'Unbounded';
 }
 
 /* Politicas de Privacidad */
