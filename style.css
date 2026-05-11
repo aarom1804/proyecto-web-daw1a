@@ -3,6 +3,10 @@ body{
 }
 /* Barra de navegacion */
 
+:focus-visible {  
+  outline: 3px solid Black;
+}
+
 .navbar {
   padding: 2rem;
   background-color: gray;
@@ -12,6 +16,10 @@ body{
 .navbar-collapse {
   align-items: center;
   justify-content: space-between;  
+}
+
+.nav-link{
+  color: #000055 !important;
 }
 
 .nav-link:hover{
@@ -80,7 +88,7 @@ section {
   display: block;
 }
 
-.home .contenedor h2{
+.home .contenedor h1{
     position: absolute;
     top: 50%;
     left: 50%;

@@ -22,7 +22,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <!-- Schema -->
   <script type="application/ld+json">
@@ -115,27 +115,28 @@
     <div class="container-fluid">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
         aria-controls="navbar-toggler" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span tabindex="0" class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbar-toggler">
-        <a class="navbar-brand ms-md-3" href="#">
-          <img src="img/logo-sin-texto.png" width="50" alt="Logo de la página web">
+        <a tabindex="0" class="navbar-brand ms-md-3" href="#">
+          <img tabindex="0" src="img/logo-sin-texto.png" width="50" alt="Icono lineal que combina un símbolo de infinito 
+          en la base con dos hojas creciendo en la parte superior, sugiriendo sostenibilidad o ciclo de vida natural.">
         </a>
         <ul class="navbar-nav d-flex justify-content-center align-items-center me-md-3">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            <a tabindex="0" class="nav-link active" aria-current="page" href="#home">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#nosotros">Sobre Nosotros</a>
+            <a tabindex="0" class="nav-link" href="#nosotros">Sobre Nosotros</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#servicios">Servicios</a>
+            <a tabindex="0" class="nav-link" href="#servicios">Servicios</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#opiniones">Opiniones</a>
+            <a tabindex="0" class="nav-link" href="#opiniones">Opiniones</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contacto">Contacto</a>
+            <a tabindex="0" class="nav-link" href="#contacto">Contacto</a>
           </li>
         </ul>
       </div>
@@ -145,8 +146,9 @@
   <!-- Home -->
   <section id="home" class="home seccion-oscura">
     <div class="contenedor">
-      <img src="img/img/imagen_desperdicio.png" alt="Desperdicio">
-      <h2 class="seccion-titulo">EFFINITY</h2>
+      <img tabindex="0" src="img/img/imagen_desperdicio.webp" alt="Cocinero con uniforme blanco desechando 
+      restos de comida en un contenedor de basura dentro de una cocina profesional.">
+      <h1 tabindex="0" class="seccion-titulo">EFFINITY</h1>
     </div>
   </section>
 
@@ -158,25 +160,27 @@
       <div class="d-flex text-center align-items-center mb-4">
         <div class="column flex-grow-1">
           <div class="seccion-titulo texto-blanco p-3">
-            <h2>Sobre Nosotros</h2>
+            <h2 tabindex="0">Sobre Nosotros</h2>
           </div>
           <div class="px-5 pb-4">
             <blockquote class="blockquote">
-              <p>Somos una empresa dedicada a transformar la manera en que las organizaciones gestionan sus residuos
+              <p tabindex="0">Somos una empresa dedicada a transformar la manera en que las organizaciones gestionan sus residuos
                 alimentarios. Combinamos análisis de datos avanzados con estrategias sostenibles para reducir el
                 desperdicio, mejorar la eficiencia y generar un impacto positivo en el medio ambiente. </p>
             </blockquote>
           </div>
         </div>
         <div class="imagen-nosotros">
-          <img src="img/img/control-cocina.webp" alt="Control de cocina" class="img-fluid">
+          <img tabindex="0" src="img/img/control-cocina.webp" alt="Una mujer joven con un delantal verde escribe en una tabla 
+          portapapeles mientras supervisa cajas de frutas y verduras frescas en una cocina. Al fondo, dos compañeros 
+          trabajan con los alimentos cerca de una ventana luminosa." class="img-fluid">
         </div>
       </div>
 
       <div class="row">
         <div class="col-12">
           <div class="ratio ratio-16x9"> <video controls class="rounded">
-              <source src="./video/Video_Effinity.mp4" type="video/mp4">
+              <source tabindex="0" src="./video/Video_Effinity.mp4" type="video/mp4">
               Tu navegador no soporta videos.
             </video>
           </div>
@@ -188,15 +192,17 @@
 
   <!-- Servicios -->
   <section id="servicios" class="servicios-ofrecidos seccion-clara d-flex flex-column">
-    <h2 class="seccion-titulo texto-negro text-center">Servicios</h2>
-    <h3 class="seccion-descripcion text-center">Estos son los servicios que ofrecemos</h3>
+    <h2 tabindex="0" class="seccion-titulo texto-negro text-center">Servicios</h2>
+    <h3 tabindex="0" class="seccion-descripcion text-center">Estos son los servicios que ofrecemos</h3>
 
     <div id="servicios-carrusel" class="carousel carousel-dark slide" data-bs-ride="carousel">
       <div class="carousel-inner">
 
         <div class="carousel-item active">
           <div class="container d-flex justify-content-center">
-            <div class="servicio" style="max-width: 1600px;"> <img src="img/img/imagen-cocina.webp" alt="Servicio 1"
+            <div class="servicio" style="max-width: 1600px;"> <img src="img/img/imagen-cocina.webp" alt="Un chef con uniforme y 
+              gorro blanco revisa documentos y utiliza una calculadora sobre una mesa de acero inoxidable en una cocina industrial. 
+              En primer plano hay una cesta roja con tomates frescos y al fondo se ve el equipamiento de cocina."
                 class="d-block w-100">
               <div class="overlay">
                 <p>Analisis de Desperdicio</p>
@@ -213,11 +219,13 @@
         <div class="carousel-item">
           <div class="container d-flex justify-content-center">
             <div class="servicio" style="max-width: 1600px;">
-              <img src="img/img/imagen-ahorro.webp" alt="Servicio 2" class="d-block w-100">
+              <img src="img/img/imagen-ahorro.webp" alt="Vista cenital de unas manos operando una calculadora con 
+              rollo de papel impreso sobre una mesa de madera oscura. A la izquierda, una tabla de madera contiene 
+              varios bollos de repostería, como croissants y napolitanas de chocolate." class="d-block w-100">
               <div class="overlay">
-                <p>Visualiza tus pérdidas ocultas</p>
+                <p >Visualiza tus pérdidas ocultas</p>
                 <div class="iconos-contenedor">
-                  <a href="https://www.freecodecamp.org/espanol/" target="_blank" rel="noopener noreferrer">
+                  <a  href="https://www.freecodecamp.org/espanol/" target="_blank" rel="noopener noreferrer">
                     <i class="bi bi-graph-up-arrow"></i>
                   </a>
                 </div>
@@ -229,7 +237,10 @@
         <div class="carousel-item">
           <div class="container d-flex justify-content-center">
             <div class="servicio" style="max-width: 1600px;">
-              <img src="img/img/imagen-alimento-movil.webp" alt="Servicio 3" class="d-block w-100">
+              <img src="img/img/imagen-alimento-movil.webp" alt="Vista cenital de un teléfono móvil blanco con 
+              la pantalla negra colocado en el centro de una mesa de madera. El dispositivo está rodeado artísticamente 
+              por una gran variedad de vegetales frescos como tomates, lechuga, pimientos, ajos, champiñones, berenjena 
+              y cebolletas." class="d-block w-100">
               <div class="overlay">
                 <p>Recomendaciones Inteligentes</p>
                 <div class="iconos-contenedor">
@@ -244,12 +255,12 @@
 
       </div>
 
-      <button class="carousel-control-prev" type="button" data-bs-target="#servicios-carrusel" data-bs-slide="prev">
+      <button tabindex="0" class="carousel-control-prev" type="button" data-bs-target="#servicios-carrusel" data-bs-slide="prev">
         <i class="bi bi-chevron-left icono-carrusel-personalizado" aria-hidden="true"></i>
         <span class="visually-hidden">Anterior</span>
       </button>
 
-      <button class="carousel-control-next" type="button" data-bs-target="#servicios-carrusel" data-bs-slide="next">
+      <button tabindex="0" class="carousel-control-next" type="button" data-bs-target="#servicios-carrusel" data-bs-slide="next">
         <i class="bi bi-chevron-right icono-carrusel-personalizado" aria-hidden="true"></i>
         <span class="visually-hidden">Siguiente</span>
       </button>
@@ -263,7 +274,7 @@
     <div class="container rectangulo p-4">
 
       <div class="texto-blanco text-center mb-4">
-        <h2 class="seccion-titulo">Nuestra Ubicación</h2>
+        <h2 tabindex="0" class="seccion-titulo">Nuestra Ubicación</h2>
       </div>
 
       <div class="row">
@@ -273,7 +284,7 @@
       </div>
 
       <div class="text-center mt-3 texto-blanco">
-        <p>Visítanos en nuestras oficinas centrales.</p>
+        <p tabindex="0">Visítanos en nuestras oficinas centrales.</p>
       </div>
 
     </div>
@@ -285,7 +296,7 @@
   <div class="container rectangulo p-4">
 
     <div class="texto-blanco text-center mb-4">
-      <h2 class="seccion-titulo">Cómo trabajamos</h2>
+      <h2 tabindex="0" class="seccion-titulo">Cómo trabajamos</h2>
     </div>
 
     <div class="row g-4">
@@ -295,14 +306,14 @@
         <div class="flip-card">
           <input type="checkbox" id="card1">
           <label for="card1" class="flip-inner">
-            <div class="flip-front">
-              <img src="./img/icons/datos-moviles.png" alt="">
-              <p>Análisis de datos</p>
-            </div>
-            <div class="flip-back">
-              <img src="./img/icons/datos-moviles.png" alt="">
-              <p>Recopilamos y analizamos datos para detectar patrones de desperdicio.</p>
-            </div>
+            <span class="flip-front">
+              <img tabindex="0" src="./img/icons/datos-moviles.png" alt="Icono de barras">
+              <span tabindex="0">Análisis de datos</span>
+            </span>
+            <span class="flip-back">
+              <img tabindex="0" src="./img/icons/datos-moviles.png" alt="Icono de barras">
+              <span tabindex="0">Recopilamos y analizamos datos para detectar patrones de desperdicio.</span>
+            </span>
           </label>
         </div>
       </div>
@@ -312,14 +323,14 @@
         <div class="flip-card">
           <input type="checkbox" id="card2">
           <label for="card2" class="flip-inner">
-            <div class="flip-front">
-              <img src="./img/icons/buscar.png" alt="">
-              <p>Ineficiencias</p>
-            </div>
-            <div class="flip-back">
-              <img src="./img/icons/buscar.png" alt="">
-              <p>Identificamos puntos críticos donde se genera desperdicio.</p>
-            </div>
+            <span class="flip-front">
+              <img tabindex="0" src="./img/icons/buscar.png" alt="Icono una lupa para buscar">
+              <span tabindex="0">Ineficiencias</span>
+            </span>
+            <span class="flip-back">
+              <img tabindex="0" src="./img/icons/buscar.png" alt="Icono una lupa para buscar">
+              <span tabindex="0">Identificamos puntos críticos donde se genera desperdicio.</span>
+            </span>
           </label>
         </div>
       </div>
@@ -329,14 +340,14 @@
         <div class="flip-card">
           <input type="checkbox" id="card3">
           <label for="card3" class="flip-inner">
-            <div class="flip-front">
-              <img src="./img/icons/mano.png" alt="">
-              <p>Estrategias</p>
-            </div>
-            <div class="flip-back">
-              <img src="./img/icons/mano.png" alt="">
-              <p>Aplicamos soluciones sostenibles y eficientes.</p>
-            </div>
+            <span class="flip-front">
+              <img tabindex="0" src="./img/icons/mano.png" alt="Icono de ideas">
+              <span tabindex="0">Estrategias</span>
+            </span>
+            <span class="flip-back">
+              <img tabindex="0" src="./img/icons/mano.png" alt="Icono de ideas">
+              <span tabindex="0">Aplicamos soluciones sostenibles y eficientes.</span>
+            </span>
           </label>
         </div>
       </div>
@@ -346,14 +357,14 @@
         <div class="flip-card">
           <input type="checkbox" id="card4">
           <label for="card4" class="flip-inner">
-            <div class="flip-front">
-              <img src="./img/icons/ambiental.png" alt="">
-              <p>Impacto</p>
-            </div>
-            <div class="flip-back">
-              <img src="./img/icons/ambiental.png" alt="">
-              <p>Medimos resultados y generamos impacto positivo continuo.</p>
-            </div>
+            <span class="flip-front">
+              <img tabindex="0" src="./img/icons/ambiental.png" alt="Icono de ecologia">
+              <span tabindex="0">Impacto</span>
+            </span>
+            <span class="flip-back">
+              <img tabindex="0" src="./img/icons/ambiental.png" alt="Icono de ecologia">
+              <span tabindex="0">Medimos resultados y generamos impacto positivo continuo.</span>
+            </span>
           </label>
         </div>
       </div>
@@ -364,8 +375,8 @@
 
   <!-- Opiniones -->
   <section id="opiniones" class="opiniones seccion-clara">
-    <h2 class="seccion-titulo">Opiniones</h2>
-    <h3 class="seccion-descripcion">Estas son algunas opiniones de nuestros clientes...</h3>
+    <h2 tabindex="0" class="seccion-titulo">Opiniones</h2>
+    <h3 tabindex="0" class="seccion-descripcion">Estas son algunas opiniones de nuestros clientes...</h3>
     <!-- Carrusel -->
     <div id="opiniones-carrusel" class="carousel carousel-dark slide" data-bs-ride="carousel">
       <div class="carousel-inner">
@@ -407,50 +418,50 @@
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#opiniones-carrusel" data-bs-slide="prev">
         <i class="bi bi-chevron-left icono-carrusel-personalizado" aria-hidden="true"></i>
-        <span class="visually-hidden">Anterior</span>
+        <span tabindex="0" class="visually-hidden">Anterior</span>
       </button>
 
       <button class="carousel-control-next" type="button" data-bs-target="#opiniones-carrusel" data-bs-slide="next">
         <i class="bi bi-chevron-right icono-carrusel-personalizado" aria-hidden="true"></i>
-        <span class="visually-hidden">Siguiente</span>
+        <span tabindex="0" class="visually-hidden">Siguiente</span>
       </button>
     </div>
   </section>
 
   <!-- Contacto -->
   <section id="contacto" class="contacto seccion-oscura">
-    <form action="datos.php" method="POST">
+    <form tabindex="0" action="datos.php" method="POST" aria-labelledby="titulo-contacto">
       <div class="container text-center rectangulo d-flex align-items-center justify-content-center py-2 px-5 w-auto">
         <div class="column">
           <div class="seccion-titulo col-12 col-md-4 texto-blanco">
-            <h2>¡Hablemos!</h2>
+            <h2 tabindex="0" id="titulo-contacto">¡Hablemos!</h2>
           </div>
           <div class="row mb3">
             <div class="col-md-6">
               <label for="nombre" class="form-label">Nombre</label>
-              <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingresa tu nombre"
-                required>
+              <input tabindex="0" type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingresa tu nombre"
+                required autocomplete="name">
             </div>
             <div class="col-md-6">
               <label for="email" class="form-label">Email</label>
-              <input type="email" class="form-control" id="email" name="email" placeholder="tu@email.com" required>
+              <input tabindex="0" type="email" class="form-control" id="email" name="email" placeholder="tu@email.com" required autocomplete="email">
             </div>
           </div>
           <div class="mb-3">
             <label for="mensaje" class="form-label">Mensaje</label>
-            <textarea class="form-control" id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje"
+            <textarea tabindex="0" class="form-control" id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje"
               required></textarea>
           </div>
           <div class="politicas-envio d-flex align-items-center justify-content-between">
             <div class="politicas form-check">
-              <input class="form-check-input" type="checkbox" id="flexCheckDefault">
-              <label class="form-check-label" for="flexCheckDefault">Aceptas las <a href="politicas-privacidad.html"
+              <input class="form-check-input" type="checkbox" id="flexCheckDefault" required>
+              <label tabindex="0" class="form-check-label" for="flexCheckDefault">Aceptas las <a href="politicas-privacidad.html"
                   class="politicas">politicas de privacidad</a></label>
             </div>
             <div class="envio">
-              <button type="submit">
+              <button tabindex="0" type="submit" aria-label="Enviar formulario de contacto">
                 Contacto
-                <i class="bi bi-envelope-check-fill"></i>
+                <i class="bi bi-envelope-check-fill" aria-hidden="true"></i>
               </button>
             </div>
           </div>
@@ -461,34 +472,34 @@
 
   <!-- Pie de pagina (footer) -->
   <footer class="footer seccion-oscura d-flex flex-column align-items-center justify-content-center">
-    <img class="footer-logo" src="img/logo-sin-texto.png" alt="Logo Effinity">
-    <p class="footer-texto text-center">Gestionemos mejor nuestros desperdicios,<br>juntos podemos hacer un mundo mejor.
+    <img tabindex="0" class="footer-logo" src="img/logo-sin-texto.png" alt="Icono lineal que combina un símbolo de infinito en la base con dos hojas creciendo en la parte superior, sugiriendo sostenibilidad o ciclo de vida natural.">
+    <p tabindex="0" class="footer-texto text-center">Gestionemos mejor nuestros desperdicios,<br>juntos podemos hacer un mundo mejor.
     </p>
     <div class="podcast d-flex flex-column align-items-center justify-content-center">
-      <p class="footer-texto text-center">Conocenos un poco más &#127911;</p>
+      <p tabindex="0" class="footer-texto text-center">Conocenos un poco más &#127911;</p>
       <audio controls>
-      <source src="./audio/Audio_podcast.mp3" type="audio/mpeg">
+      <source tabindex="0" src="./audio/Audio_podcast.mp3" type="audio/mpeg">
       Tu navegador no soporta el elemento de audio.
       </audio>
     </div>
     <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
-      <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+      <a tabindex="0" href="https://twitter.com" target="_blank" rel="noopener noreferrer">
         <i class="bi bi-twitter"></i>
       </a>
-      <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+      <a tabindex="0" href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
         <i class="bi bi-instagram"></i>
       </a>
-      <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+      <a tabindex="0" href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
         <i class="bi bi-facebook"></i>
       </a>
     </div>
     <div class="ubicacion">
       <div>
-        <p>Encuentranos en:</p>
-        <p>C/Tarragona 321</p>
+        <p tabindex="0">Encuentranos en:</p>
+        <p tabindex="0">C/Tarragona 321</p>
       </div>
     </div>
-    <div class="derechos-de-autor">Creado por Jeynner Gonzalez</div>
+    <div tabindex="0" class="derechos-de-autor">Creado por Jeynner Gonzalez</div>
   </footer>
   <script>
 
